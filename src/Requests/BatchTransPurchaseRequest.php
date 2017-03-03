@@ -10,7 +10,6 @@ class BatchTransPurchaseRequest extends AbstractLegacyRequest
     {
         $this->validate(
             'partner',
-            'key',
             'notify_url',
             'input_charset',
             "account_name",
@@ -131,5 +130,35 @@ class BatchTransPurchaseRequest extends AbstractLegacyRequest
     public function setPayDate($value)
     {
         $this->setParameter('pay_date', $value);
+    }
+
+    public function getNotifyUrl()
+    {
+        return $this->getParameter('notify_url');
+    }
+
+    public function setNotifyUrl($value)
+    {
+        return $this->setParameter('notify_url', $value);
+    }
+
+    public function getInputCharset()
+    {
+        return $this->getParameter('_input_charset');
+    }
+
+    public function setInputCharset($value)
+    {
+        return $this->setParameter('_input_charset', $value);
+    }
+
+    public function getPartner()
+    {
+        return $this->getParameter('partner');
+    }
+
+    public function setPartner($value)
+    {
+        return $this->setParameter('partner', $value);
     }
 }
