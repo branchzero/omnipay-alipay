@@ -2,6 +2,7 @@
 
 namespace Omnipay\Alipay\Requests;
 
+use Omnipay\Alipay\Response\BatchTransCompletePurchaseResponse;
 use Omnipay\Common\Exception\InvalidRequestException;
 use Omnipay\Common\Message\AbstractRequest;
 

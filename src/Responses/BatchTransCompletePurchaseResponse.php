@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Alipay\Requests;
+namespace Omnipay\Alipay\Responses;
 
 use Omnipay\Common\Message\AbstractResponse;
 

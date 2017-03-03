@@ -9,7 +9,6 @@ class BatchTransPurchaseRequest extends AbstractLegacyRequest
     protected function validateData()
     {
         $this->validate(
-            'service',
             'partner',
             'key',
             'notify_url',
