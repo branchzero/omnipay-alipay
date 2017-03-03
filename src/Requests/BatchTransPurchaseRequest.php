@@ -2,6 +2,8 @@
 
 namespace Omnipay\Alipay\Requests;
 
+use Omnipay\Alipay\Responses\BatchTransPurchaseResponse;
+
 class BatchTransPurchaseRequest extends AbstractLegacyRequest
 {
     protected $service = 'batch_trans_notify';
@@ -11,7 +13,7 @@ class BatchTransPurchaseRequest extends AbstractLegacyRequest
         $this->validate(
             'partner',
             'notify_url',
-            'input_charset',
+            '_input_charset',
             "account_name",
             "email",
             "detail_data",
