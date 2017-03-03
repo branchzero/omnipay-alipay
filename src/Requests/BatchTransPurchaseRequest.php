@@ -52,6 +52,18 @@ class BatchTransPurchaseRequest extends AbstractLegacyRequest
         return $data;
     }
 
+    /**
+     * Send the request with specified data
+     *
+     * @param  mixed $data The data to send
+     *
+     * @return ResponseInterface
+     */
+    public function sendData($data)
+    {
+        return $this->response = new BatchTransPurchaseResponse($this, $data);
+    }
+
     public function getAccountName()
     {
         return $this->getParameter('account_name');
